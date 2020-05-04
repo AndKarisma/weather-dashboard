@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  
+
+  <div class="container">
+    <div class="row" style="margin-bottom: 20px;">
+      <h3 class="text-center text-primary">Todays Weather</h3>
+      <span id="error"></span>
+
+    </div>
+
+
+    <div class="container" style="height:400px">
+      <div class="row form-group form-inline" id="rowDiv">
+        <input type="text" name="city" id="city" class="form-control" placeholder="Enter City Name">
+        <button id="submitWeather" class="=btn bt-primary">Search City</button>
+
+      </div>
+
+      <div class="content-box2">
+        <div id="show"></div>
+      </div>
+
+      </br>
+
+      <!--show 5 day-->
+      <div class="row" style="margin-bottom: 20px;">
+        <h3 class="text-center text-primary">2 Day Forecast</h3>
+      </div>
+
+      <div class="container" style="height:1300px">
+        <div class="row form-group form-inline" id="rowDiv2">
+          <input type="text" name="fiveDayCity" id="fiveDayCity" class="form-control" placeholder="Enter City Name">
+          <button id="submitFiveDay" class="=btn bt-primary">Search City</button>
+
+        </div>
+
+        <div class="content-box">
+          <div id="twoDay"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
